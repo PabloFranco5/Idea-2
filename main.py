@@ -92,21 +92,77 @@ class infofarmaceutica:
 
 
 
-
-
-
-
-
 def agregarinfo_p():
-    tipo_doc= input("Ingrese tipo de documento (cc, ti, rc, ce, pp): ")
-    documento= input("Ingrese el documento del paciente: ")
-    nombre = input("Ingrese el nombre del paciente: ")
-    apellido = input("Ingrese el apellido del paciente: ")
-    numero_contacto =input("Ingrese el numero de contacto: ") 
-    ciudad_residencia =input("Ingrese la ciudad de residencia: ")
-    estado_civil =input("Ingrese el estado civil: ")
-    nacionalidad =input("Ingrese la nacionalidad:  ")
-    numero_emergencia =input("Ingrese un numero contacto de emergencia: ")
+    while True:
+        tipo_doc = str(input("Ingrese tipo de documento (cc, ti, rc, ce, pp): "))
+        if tipo_doc == ("cc" or "ti" or "rc" or "ce" or "pp"):
+            break
+        print("Ingrese un valor válido")
+
+    while True:
+        try:
+            documento = int(input("Ingrese el documento del paciente: "))
+            if documento > 10**6:
+                break
+            print("Confirme documento de identificación")
+        except ValueError: 
+            print("No es un número válido")
+            
+    
+    while True:
+        nombre = str(input("Ingrese el nombre del paciente: "))
+        if any(chr.isdigit() for chr in nombre):
+            print("Revise el nombre :(")
+        else:
+            break
+
+    while True:
+        apellido = str(input("Ingrese el apellido del paciente: "))
+        if any(chr.isdigit() for chr in apellido):
+            print("Revise el apellido :(")
+        else:
+            break
+
+    while True:
+        try:
+            numero_contacto = int(input("Ingrese el numero de contacto: "))
+            if numero_contacto > 10**6:
+                break
+            print("Confirme número de contacto")
+        except ValueError: 
+            print("No es un número válido")
+
+
+    while True:
+        ciudad_residencia = str(input("Ingrese la ciudad de residencia: "))
+        if any(chr.isdigit() for chr in ciudad_residencia):
+            print("Revise la ciudad de residencia :(")
+        else:
+            break
+
+    while True:
+        estado_civil = str(input("Ingrese el estado civil: "))
+        if any(chr.isdigit() for chr in estado_civil):
+            print("Revise el estado civil :(")
+        else:
+            break
+
+    while True:
+        nacionalidad = str(input("Ingrese la nacionalidad:  ")))
+        if any(chr.isdigit() for chr in nacionalidad):
+            print("Revise la nacionalidad :(")
+        else:
+            break
+
+    while True:
+        try:
+            numero_emergencia = int(input("Ingrese un número contacto de emergencia: "))
+            if numero_emergencia > 10**6:
+                break
+            print("Confirme número de contacto")
+        except ValueError: 
+            print("No es un número válido")
+
     ultima_actualizacion =input("Ingrese la fecha de la ultima visita (año,mes,dia): ")
 
     Paciente= infopersonalpaciente(tipo_doc, documento, nombre, apellido, numero_contacto, ciudad_residencia, estado_civil, nacionalidad, numero_emergencia, ultima_actualizacion)
