@@ -1,1 +1,3 @@
-,0
+,tipo_doc,documento,nombre,apellido,numero_contacto,ciudad_residencia,estado_civil,nacionalidad,numero_emergencia,ultima_actulizacion
+0,cc,1000895134,pablo,franco,3114561132,sopetran,casado,colombiana,3215650089,"(2021,12,1)"
+1,cc,100384892,juan,perez,301384793,rionegro,soltero,argentina,3113947090,"(2020,1,1)"

@@ -1,0 +1,2 @@
+,ticket,documento,historia,farmaceutica,profesional,medicamento,laboratorio,codigo,administracion,cantidad,entrega
+0,12,1000895134,14,fabio,123456789,acetaminofen,farlab,1234544,oral,500,"(2022,1,4)"
