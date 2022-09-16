@@ -31,8 +31,9 @@ class infomedica:
 
     def DFdata(self):
         """
-        esta función cumple con el proposito de dar un descripción detallada de la información 
-        medica del paciente proporcionada por el mismo, todo esto compliado en un dataframe para su mayor comprensión. 
+        esta función cumple con el proposito de dar una descripción detallada de la información 
+        medica del paciente proporcionada por el mismo, todo esto compliado en un dataframe para su 
+        mayor comprensión. 
             
         """
 

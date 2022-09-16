@@ -12,9 +12,12 @@ import pandas as pd
 import warnings
 warnings.simplefilter(action='ignore', category=Warning)
 
-#las funciones en general llamadas agregarinfo_ tienen la intencion de que dependiendo del tipo de informacion que se desee
-#llenar preguntarla con especificaciones delimitadas para mayor facilidad tanto al lector como para la base de datos
-#arrojando en un listado los datos que se pidieron 
+# las funciones en general llamadas agregarinfo_ tienen la intencion de que dependiendo del tipo de informacion que se 
+# desee llenar preguntarla con especificaciones delimitadas para mayor facilidad tanto al lector como para la base de
+# datos, arrojando en un listado los datos que se pidieron no permitiendo la ingesta de posibles valores erroneos debido 
+# a quien este ingresando los datos condicionando mediante cada input el tipo de informacion que se 
+# esta ingresando. Al momento de comenter un error o ingresar un dato de manera incorrecta se arrojara un aviso de correcion 
+
 
 
 def agregarinfo_p():
@@ -376,9 +379,10 @@ def agregarinfo_f():
     info_farmaceutica= infofarmaceutica(ticket, documento, historia, farmaceutica, profesional, medicamento, laboratorio, codigo, administracion, cantidad, entrega)
     return info_farmaceutica.DFdata()
 
-# las funciones lista_ en general tienen la intencion de compilar en una "lista" la informacion que se va compilando
-# de los diferentes pacientes dichas "listas" son vistas en forma de dataframe donde cada componente tiene su nombre respectivo 
-# al dato que pertenece 
+# las funciones lista_ en general tienen la intencion de compilar en una serie la informacion que se va recolectando 
+# de los diferentes pacientes, dichas series conforman un dataframe donde cada registro tiene almacenado los datos con 
+# sus respectivos campos solicitados previamente. 
+
 
 def lista_p():
     print("--Listado de informacion basica de pacientes--")

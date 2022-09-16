@@ -23,8 +23,8 @@ class infofarmaceutica:
     def DFdata(self):
         """
         Esta función tiene el oficio de resumir el proceso donde un farmaceutico le entrega a un 
-        paciente el medicamento que le preescribio el medico anteriormente recetado donde se especifica el medicamento, la dosis 
-        y la aplicación del mismo, todo es devuelto en forma de dataframe.
+        paciente el medicamento que le preescribio el medico anteriormente recetado donde se especifica 
+        el medicamento, la dosis y la aplicación del mismo, todo es devuelto en forma de un dataframe.
 
            
         """

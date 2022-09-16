@@ -26,8 +26,8 @@ class infoadministrativa:
 
     def DFdata(self):
         """
-        Esta función tiene la caracteristica de relatar la información administrativa acerca 
-        del paciente compliada mediante un dataframe. 
+        Esta función tiene la caracteristica de compliar la información administrativa acerca 
+        del paciente mediante un dataframe. 
         """
 
         self.atributos = [self.tipo_doc, self.documento, self.nombre, self.apellido, self.ticket,

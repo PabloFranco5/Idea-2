@@ -22,7 +22,7 @@ class infopersonalpaciente:
     def DFdata(self):
         """
         Esta función tinene el proposito de dar un resumen informativo acerca de los datos basicos y de contacto 
-        proporcionados por el paciente en cuestion mediante un dataframe.
+        proporcionados por el paciente en cuestión mediante un dataframe.
 
         """
         

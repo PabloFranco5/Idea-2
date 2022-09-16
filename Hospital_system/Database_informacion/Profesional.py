@@ -20,8 +20,7 @@ class infoprofesional:
     def DFdata(self):
         """
         Esta función nos genera un resumen de la información del profesional que en cuestión 
-        atiende al paciente mediante un return convierte el 
-        resumen de los datos en dataframe.
+        atiende al paciente mediante un dataframe.
         """
 
         self.atributos = [self.nombre_prof, self.apellido_prof, self.tipo_doc, self.documento_prof,
